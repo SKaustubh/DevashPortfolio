@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  RxDiscordLogo,
   RxGithubLogo,
   RxInstagramLogo,
   RxTwitterLogo,
@@ -22,7 +21,9 @@ const Footer = () => {
               className="flex flex-row items-center my-[15px] cursor-pointer"
             >
               <FaYoutube />
-              <span className="text-[15px] ml-[6px]">Youtube</span>
+              <span className="text-[15px] ml-[6px] cursor-pointer">
+                Youtube
+              </span>
             </a>
             <a
               href="https://github.com/SKaustubh"
@@ -31,7 +32,9 @@ const Footer = () => {
               className="flex flex-row items-center my-[15px] cursor-pointer"
             >
               <RxGithubLogo />
-              <span className="text-[15px] ml-[6px]">Github</span>
+              <span className="text-[15px] ml-[6px] cursor-pointer">
+                Github
+              </span>
             </a>
           </div>
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
@@ -43,16 +46,20 @@ const Footer = () => {
               className="flex flex-row items-center my-[15px] cursor-pointer"
             >
               <RxInstagramLogo />
-              <span className="text-[15px] ml-[6px]">Instagram</span>
+              <span className="text-[15px] ml-[6px] cursor-pointer">
+                Instagram
+              </span>
             </a>
             <a
               href="https://twitter.com/Singhkaustubh3"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-row items-center my-[15px] cursor-pointer"
+              className="flex flex-row items-center my-[15px] cursor-pointer cursor-pointer"
             >
               <RxTwitterLogo />
-              <span className="text-[15px] ml-[6px]">Twitter</span>
+              <span className="text-[15px] ml-[6px] cursor-pointer">
+                Twitter
+              </span>
             </a>
             <a
               href="https://www.linkedin.com/in/kaustubh-singh-11-gt/"
@@ -61,19 +68,30 @@ const Footer = () => {
               className="flex flex-row items-center my-[15px] cursor-pointer"
             >
               <RxLinkedinLogo />
-              <span className="text-[15px] ml-[6px]">Linkedin</span>
+              <span className="text-[15px] ml-[6px] cursor-pointer">
+                Linkedin
+              </span>
             </a>
           </div>
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
             <div className="font-bold text-[16px]">About</div>
             <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <a href="#" className="text-[15px] ml-[6px]">Become Sponsor</a>
+              <a href="#" className="text-[15px] ml-[6px]">
+                Become Sponsor
+              </a>
             </p>
             <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <a href="#" className="text-[15px] ml-[6px]">Learning about me</a>
+              <a href="#" className="text-[15px] ml-[6px]">
+                Learning about me
+              </a>
             </p>
             <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <a href="mailto:kaustubhsingh37@gmail.com" className="text-[15px] ml-[6px]">kaustubhsingh37@gmail.com</a>
+              <a
+                href="mailto:kaustubhsingh37@gmail.com"
+                className="text-[15px] ml-[6px]"
+              >
+                kaustubhsingh37@gmail.com
+              </a>
             </p>
           </div>
         </div>
