@@ -32,20 +32,7 @@ export const Skill_data = [
   },
 ];
 
-export const Socials = [
-  {
-    name: "Instagram",
-    src: "/instagram.png",
-  },
-  {
-    name: "Twitter",
-    src: "/twitter.jpg",
-  },
-  {
-    name: "Github",
-    src: "/gitwhite.png",
-  },
-];
+
 
 export const Frontend_skill = [
   {

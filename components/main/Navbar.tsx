@@ -1,4 +1,3 @@
-import { Socials } from "@/constants";
 import socialMedia from "@/constants/sociaMedia";
 import Image from "next/image";
 import React from "react";
@@ -45,12 +44,15 @@ const Navbar: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               key={social.name}
+              className="flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-900 p-2 transition-all duration-300"
+              style={{ width: "50px", height: "50px" }}
             >
-            <Image
-                src={social.src}
+              <img
+                src={social.image} // Use the image property as the source
                 alt={social.name}
                 width={50}
                 height={50}
+                style={{ filter: "brightness(2.2) contrast(2.5)" }}
               />
             </a>
           ))}
