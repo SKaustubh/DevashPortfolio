@@ -1,8 +1,9 @@
 import { Socials } from "@/constants";
+import socialMedia from "@/constants/sociaMedia";
 import Image from "next/image";
 import React from "react";
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
@@ -38,14 +39,20 @@ const Navbar = () => {
         </div>
 
         <div className="flex flex-row gap-5">
-          {Socials.map((social) => (
-            <Image
-              src={social.src}
-              alt={social.name}
+          {socialMedia.map((social) => (
+            <a
+              href={social.url}
+              target="_blank"
+              rel="noopener noreferrer"
               key={social.name}
-              width={24}
-              height={24}
-            />
+            >
+            <Image
+                src={social.src}
+                alt={social.name}
+                width={50}
+                height={50}
+              />
+            </a>
           ))}
         </div>
       </div>
