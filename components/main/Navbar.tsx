@@ -11,11 +11,11 @@ const Navbar: React.FC = () => {
           className="h-auto w-auto flex flex-row items-center"
         >
           <Image
-            src="/NavLogo.png"
+            src="/my_photo.jpg"
             alt="logo"
-            width={70}
-            height={70}
-            className="cursor-pointer hover:animate-slowspin"
+            width={30}
+            height={30}
+            className="cursor-pointer hover:animate-slowspin flex items-center justify-center rounded-full"
           />
 
           <span className="font-bold ml-[10px] hidden md:block text-gray-300">
